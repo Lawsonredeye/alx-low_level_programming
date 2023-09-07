@@ -4,7 +4,7 @@ int main(void)
 /**
  *main - Beginning
  *
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 {
 	puts("\"Programming is like building a multilingual puzzle");
