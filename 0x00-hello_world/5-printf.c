@@ -1,5 +1,10 @@
 #include <stdio.h>
-/*This is my first code*/
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
