@@ -8,8 +8,8 @@ int main(void)
 {
 	char keyNum;
 
-	for (keyNum = 'z'; keyNum < 'a'; keyNum++)
-		putchar(keyNum + 1);
+	for (keyNum = 'z'; keyNum >= 'a'; keyNum--)
+		putchar(keyNum);
 	putchar('\n');
 	return (0);
 }
