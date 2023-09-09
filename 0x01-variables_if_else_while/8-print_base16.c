@@ -10,12 +10,12 @@ int main(void)
 	int bigBase;
 
 	for (bigBase = 0; bigBase < 16; bigBase++)
-		if (i < 10)
+		if (bigBase < 10)
 		{
 			putchar('0' + bigBase);
 		} else
 		{
-			putchar('a' + (i - 10));
+			putchar('a' + (bigBase - 10));
 		}
 	putchar('\n');
 	return (0);
