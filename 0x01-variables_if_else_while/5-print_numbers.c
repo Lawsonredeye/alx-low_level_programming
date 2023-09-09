@@ -3,16 +3,14 @@
 /**
  *  main - creating a program for printing
  *  digits from 0 - 10
- *  Return: retuirn 0 and exit program
+ *  Return: return 0 and exit program
  */
 int main(void)
 {
-	int myNum;
+	int num;
 
-	for (myNum = 0; myNum <= 10; myNum++){
-		putchar(myNum);
-	}
-	putchar('\n');
-
+	for (num = 0; num < 10; num++)
+		printf("%d", num);
+	printf("\n");
 	return (0);
 }
