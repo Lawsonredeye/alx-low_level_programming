@@ -10,7 +10,7 @@ int main(void)
 	int kiks;
 
 	for (kiks = 0; kiks < 10; kiks++)
-		putchar(kiks);
+		putchar(kiks + '0');
 	putchar('\n');
 	return (0);
 }
