@@ -5,8 +5,13 @@
  * of writing longer codes with a function
  * Return: return 0 for success
  */
+void print_alphabet(void){
+    int stand;
+    for (int stand = 97; stand <= 122; stand++)
+        putchar(stand);
+}
 int main(void)
 {
-	print_alphabet();
-	return (0);
+    print_alphabet();
+    return (0);
 }
