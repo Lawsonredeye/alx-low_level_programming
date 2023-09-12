@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,9 +7,10 @@
  */
 int main(void)
 {
-	char myName[] = "_putchar";
+	char myName[] = "_putchar\n";
+	int i;
 
-	for (int i = 0; myName[i] != '\0'; i++)
+	for (i = 0; myName[i] != '\0'; i++)
 	{
 		_putchar(myName[i]);
 	}
