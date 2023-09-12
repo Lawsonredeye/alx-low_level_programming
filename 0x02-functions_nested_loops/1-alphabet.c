@@ -10,6 +10,6 @@ void print_alphabet(void)
 	int stand;
 
 	for (int stand = 97; stand <= 122; stand++)
-		putchar(stand);
+		_putchar(stand);
 	return (0);
 }
