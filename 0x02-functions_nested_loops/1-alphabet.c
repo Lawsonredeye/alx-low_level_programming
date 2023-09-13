@@ -12,8 +12,3 @@ void print_alphabet(void)
 	for (int stand = 97; stand <= 122; stand++)
 		_putchar(stand);
 }
-int main(void)
-{
-	print_alphabet();
-    return (0);
-}
