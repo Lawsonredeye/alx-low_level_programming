@@ -6,7 +6,9 @@
  */
 void print_alphabet(void)
 {
-	for (int stand = 97; stand <= 122; stand++)
+	int stand;
+
+	for (stand = 97; stand <= 122; stand++)
 	{
 		_putchar(stand);
 	}
