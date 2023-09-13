@@ -7,7 +7,7 @@
  *
  * Return: On success 1
  */
-int _putchar(char c)
-print_alphabet(void);;
+int _putchar(char c),
+print_alphabet(void),
 #endif 
 
