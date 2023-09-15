@@ -1,0 +1,4 @@
+#!/bin/bash
+git add .
+git commit -m "hot fixes and new execution"
+git push
