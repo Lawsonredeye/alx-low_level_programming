@@ -16,7 +16,6 @@ void print_rev(char *s)
 		stren++;
 	}
 
-	int v;
 	for (v = stren - 1; v >= 0; v--)
 	{
 		putchar(s[v]);
