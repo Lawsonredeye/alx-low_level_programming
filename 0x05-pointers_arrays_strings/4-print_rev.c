@@ -16,7 +16,7 @@ void print_rev(char *str)
 	for  (a = a - 1; a >= 0; a--)
 	{
 		whot = str[a];
-		_putchar(let);
+		_putchar(whot);
 	}
 	_putchar('\n');
 }
