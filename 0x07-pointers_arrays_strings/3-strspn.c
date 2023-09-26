@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- *  * _strspn - gets the lenght of a prefix substring.
- *   * @s: type char returns the number of bytes
- *    * @accept: bytes from accept
- *     * Return: return x
- *      */
+ * _strspn - gets the lenght of a prefix substring.
+ * @s: type char returns the number of bytes
+ * @accept: bytes from accept
+ * Return: return x
+ */
 
 unsigned int _strspn(char *s, char *accept)
 {
