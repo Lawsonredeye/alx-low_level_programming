@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * print_chessboard - function to an 8x8 chessboard
- * @a: type char variable
- * Return: Always 0
+ * print_chessboard - an 8x8 chessboard
+ * @a: array to the chessboard
+ * Return: nothing
  */
 void print_chessboard(char (*a)[8])
 {
@@ -14,7 +14,7 @@ void print_chessboard(char (*a)[8])
 	for (i = 0; i < 8; i++)
 	{
 		for (j = 0; j < 8; j++)
-			_putchar(a[i][j]);
+			putchar(a[i][j]);
+		putchar('\n');
 	}
-	_putchar("\n");
 }
