@@ -4,7 +4,7 @@
 /**
  * print_chessboard - function to an 8x8 chessboard
  * @a: type char variable
- * Return: always 0
+ * Return: Always 0
  */
 void print_chessboard(char (*a)[8])
 {
