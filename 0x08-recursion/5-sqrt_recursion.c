@@ -30,16 +30,19 @@ int guess(int i, int g)
  */
 int _sqrt_recursion(int n)
 {
-	if (guess(n, 1) == -1)
+	int result = guess(1, n);
+
+	if (result == -1)
 	{
-		return (guess(1, n));
+		return (result);
 	}
 	if (n == 0)
 	{
 		return (0);
 	}
-	if (guess(n, 1) != -1)
+	if (result != -1)
 	{
-		return (guess(n, 1));
+		return (result);
 	}
+	return (-1);
 }
