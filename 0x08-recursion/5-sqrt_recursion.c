@@ -21,6 +21,7 @@ int guess(int i, int g)
 	{
 		return (guess(i + 1, g));
 	}
+	return (-1);
 }
 
 /**
