@@ -2,13 +2,13 @@
 
 /**
  * main - entry point for code execution
- * @argc: int var to main
+ * @argv: int var to main
  * Return: 0 always
  */
 int main(int argc, char *argv[])
 {
 	(void)argv;
 
-	printf("%d", argc);
+	printf("%d\n", argc);
 	return (0);
 }
