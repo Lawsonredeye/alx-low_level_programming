@@ -12,5 +12,5 @@ Now, the computer does this automatically when we declare a variable but what ha
 ## Whats Dynamic Memory Allocation?
 Well, dynamic memory allocation is creating a reserved memory manually to store values and using dynamic allocation helps to manage the space used in the memory.
 
-This is done by using the `malloc` function in c and also this function can be accessed by the compiler using the `#include <stdlib.h>` header file.
+This is done by using the `malloc` function in c and also this function can be accessed by the compiler using the `#include <string.h>` header file.
 
