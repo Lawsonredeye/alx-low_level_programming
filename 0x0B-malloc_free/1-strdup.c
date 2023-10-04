@@ -11,7 +11,10 @@ int len(char *s)
 {
 	int i;
 
-	for (i = 0; s[i] != '\0'; i++);
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		i++;
+	}
 	return (i);
 }
 
@@ -41,15 +44,18 @@ void mycpy(char *dest, char *src)
  */
 char *_strdup(char *str)
 {
-	char *j = malloc((len(str) + 1) * sizeof(char));
+	char *j;
+
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
+	j = malloc((len(str) + 1) * sizeof(char));
 
 	if (j == NULL)
 	{
 		printf("Error");
-		return (NULL);
-	}
-	if (str == NULL)
-	{
 		return (NULL);
 	}
 	else
