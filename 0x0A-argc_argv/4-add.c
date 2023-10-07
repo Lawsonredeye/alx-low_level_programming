@@ -30,7 +30,8 @@ int _isdigit(int c)
  */
 int main(int argc, char *argv[])
 {
-	int i, j; int sum = 0;
+	int i, j;
+	int sum = 0;
 
 	if (argc <= 1)
 	{
