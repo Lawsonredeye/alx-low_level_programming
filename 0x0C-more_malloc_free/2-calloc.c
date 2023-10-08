@@ -12,7 +12,8 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int *loc = malloc(sizeof(*loc) * (nmemb * size));
+	void *loc = malloc(nmemb * size);
+	char *char_loc = (char *)loc;
 	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
@@ -25,7 +26,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 	for (i = 0; i < nmemb * size; i++)
 	{
-		loc[i] = 0;
+		char_loc[i] = 0;
 	}
 	return (loc);
 }
