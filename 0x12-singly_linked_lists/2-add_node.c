@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <string.h>
 #include "lists.h"
 
@@ -11,7 +12,7 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	newernode = malloc(sizeof(list_t));
+	list_t *newernode = malloc(sizeof(list_t));
 
 	if (newernode == NULL)
 	{
