@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "lists.h"
 
 void easyFunc(void) __attribute__ ((constructor));
 /**
