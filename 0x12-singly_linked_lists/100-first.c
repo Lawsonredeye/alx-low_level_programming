@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+void easyFunc(void) __attribute__ ((constructor));
 /**
  * easyFunc - prints a statement before the main function
  * Return: returns (0)
