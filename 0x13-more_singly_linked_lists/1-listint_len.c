@@ -12,7 +12,7 @@ size_t listint_len(const listint_t *h)
 {
 	int count = 0, i;
 	const listint_t *listnode = malloc(sizeof(listint_t));
-	
+
 	if (h == NULL)
 	{
 		printf("Node is empty\n");
