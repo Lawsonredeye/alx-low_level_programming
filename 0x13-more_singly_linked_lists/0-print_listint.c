@@ -12,7 +12,7 @@
 size_t print_listint(const listint_t *h)
 {
 	int count = 0, i;
-	const listint_t *numcount = malloc(sizeof(listint_t));
+	const listint_t *numcount;
 
 	numcount = h;
 	for (i = 0; numcount != NULL; i++)
