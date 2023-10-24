@@ -30,5 +30,5 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		}
 		Qtemps->next = endnode;
 	}
-	return (*head);
+	return (Qtemps);
 }
