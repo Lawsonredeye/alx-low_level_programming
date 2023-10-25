@@ -13,7 +13,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	listint_t *temps, *qnode;
 	unsigned int i;
 
-	if (head == NULL)
+	if (*head == NULL)
 	{
 		return (-1);
 	}
@@ -25,15 +25,13 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		return (1);
 	}
 	temps = *head;
+	if (temps == NULL)
+		return (-1);
 	for (i = 0; i < index - 1; i++)
 	{
-		if (temps == NULL)
-		{
-			return (-1);
-		}
 		temps = temps->next;
 	}
-	if (temps->next == NULL || temps->next == NULL)
+	if (temps->next == NULL)
 	{
 		return (-1);
 	}
