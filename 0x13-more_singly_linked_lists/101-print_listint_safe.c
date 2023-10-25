@@ -12,18 +12,33 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	int i, count = 0;
-	const listint_t *dnode;
+	const listint_t *dnode, *slow, *fast;
 
 	if (head == NULL)
 	{
 		exit(98);
 	}
 	dnode = head;
-	for (i = 0; dnode != NULL; i++)
+	slow = head;
+	fast = head;
+	if (fast == NULL)
+	{
+		exit(98);
+	}
+	for (i = 0; slow != NULL && fast != NULL; i++)
 	{
 		count++;
 		printf("[%p] %d\n", (void *)dnode->next, dnode->n);
 		dnode = dnode->next;
+		if (fast->next == NULL || fast->next->next == NULL)
+			break;
+		slow = slow->next;
+		fast = fast->next->next;
+		if (slow == fast)
+		{
+			break;
+		}
 	}
+
 	return (count);
 }
