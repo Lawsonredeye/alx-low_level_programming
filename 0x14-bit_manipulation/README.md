@@ -1,6 +1,7 @@
-# Bit Manipulation and Bitwise Operators
+# Bit Manipulation and Bitwise Operators (C - Bit manipulation)
 Bit manipulation is a fundamental concept in computer science and programming that involves the manipulation of individual bits within a binary representation of data. It is a powerful technique used to perform various operations at the bit level, allowing for efficient and often low-level control over data.
-`Bitwise Operators`  are the tools or operations that enable bit manipulation.
+`Bitwise Operators`  are the tools or operations that enable bit manipulation. In this youll learn about bitwise and its operators.
+This Repo consists of functions that are related to bitwise operators and how to convert several digits to decimals. If you find any useful, please feel free to clone and ask for a pull request
 
 ## Bitwise Operators
 Bitwise operators are used to perform specific operations on individual bits of binary data. There are several common bitwise operators in most programming languages, including:
