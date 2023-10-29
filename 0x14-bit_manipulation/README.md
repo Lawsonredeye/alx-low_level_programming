@@ -18,6 +18,6 @@ Bitwise operators are used to perform specific operations on individual bits of 
 
 6. Right Shift (>>): The right shift operator moves the bits of a number to the right by a specified number of positions, effectively dividing the number by 2 raised to the power of the shift amount. This is often used for arithmetic shifts.
 
-###Note
+### Note
 when trying to solve tasks using bitwise operators its important to always use a truth table especially when youre having difficulties in remembering what a particular operator is used for.
 Also, when we mention bitwise operator its important to note that whenever youre trying to do any specific task then you should convert your value to binary as bitwise operators deals with `0s` and `1s`.
