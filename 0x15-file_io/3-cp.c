@@ -4,6 +4,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * main - program that copies the content
+ * of a file to another file.
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: 1 on success and -1 on error
+ */
 int main(int argc, char *argv[])
 {
 	int fd, fd2;
@@ -26,7 +33,7 @@ int main(int argc, char *argv[])
 	if (cpy1 == -1)
 	{
 		close(fd);
-		return(-1);
+		return (-1);
 	}
 	fd2 = open(argv[2], O_RDWR | O_TRUNC);
 	if (fd2 == -1)
