@@ -1,9 +1,15 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
-#include <stdlib.h>
 #include <string.h>
 
+/**
+ * append_text_to_file - function that appends
+ * text at the end of a file.
+ * @filename: name of the file to be appended to
+ * @text_content: content of filename
+ * Return: 1 on success
+ */
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
