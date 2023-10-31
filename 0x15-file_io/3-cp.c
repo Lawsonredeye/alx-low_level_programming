@@ -19,13 +19,13 @@ int main(int argc, char *argv[])
 
 	if (argc < 2)
 	{
-		printf("Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	fd = open(argv[1], O_RDONLY);
 	if (fd == -1)
 	{
-		printf("Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		close(fd);
 		exit(98);
 	}
@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 	}
 	if (close(fd) == -1 || close(fd2) == -1)
 	{
-		printf("Error: Can't close fd %i", STDOUT_FILENO);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n",fd);
 		exit(100);
 	}
 	close(fd);
