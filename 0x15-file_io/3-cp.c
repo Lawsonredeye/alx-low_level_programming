@@ -38,13 +38,13 @@ int main(int argc, char *argv[])
 	fd2 = open(argv[2], O_RDWR | O_TRUNC);
 	if (fd2 == -1)
 		open(argv[2], O_RDWR | O_CREAT, 0664);
-	cpy2 = write(fd2, buff, strlen(buff));
+	cpy2 = write(fd2, buff, cpy1);
 	if (cpy2 == -1)
 	{
 		close(fd);
 		return (-1);
 	}
-	if (close(fd) == -1 || close(fd2) == -1)
+	if (close(fd) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd);
 		exit(100);
