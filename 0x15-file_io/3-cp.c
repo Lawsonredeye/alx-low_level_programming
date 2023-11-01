@@ -37,7 +37,14 @@ int main(int argc, char *argv[])
 	}
 	fd2 = open(argv[2], O_RDWR | O_TRUNC);
 	if (fd2 == -1)
-		open(argv[2], O_RDWR | O_CREAT, 0664);
+	{
+		fd2 = open(argv[2], O_RDWR | O_CREAT, 0664);
+		if (fd2 == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
+		}
+	}
 	cpy2 = write(fd2, buff, cpy1);
 	if (cpy2 == -1)
 	{
@@ -49,6 +56,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", fd);
 		exit(100);
 	}
-	close(fd);
+	close(fd2);
 	return (1);
 }
