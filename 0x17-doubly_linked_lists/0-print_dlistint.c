@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * _print_dlistint - function that prints all the elements
+ * print_dlistint - function that prints all the elements
  * of a dlistint_t list.
  * @h: link to be traversed
  * Return: return count and the number of element
