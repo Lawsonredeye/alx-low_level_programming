@@ -1,5 +1,4 @@
-.PHONY: all say_all
-all: say_all
+.PHONY: all
 
-say_all :
+all:
     gcc main.c school.c -o school
