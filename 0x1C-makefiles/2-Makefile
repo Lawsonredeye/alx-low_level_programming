@@ -1,13 +1,13 @@
 CC = gcc
-SRC = ${wildcard *.c}
-OBJ = ${wildcard *.o}
-CFLAG = -c
+SRC = $(wildcard *.c)
+OBJ = $(SRC:.c=.o)
+CFLAGS = -c
 NAME = school
 
 all: prog
 
-prog: $(SRC)
-	${CC} ${OBJ} -o ${NAME}
+${NAME}: $(OBJ)
+	$(CC) $^ -o $@
 
 %.o: %.c
-	${CC} ${CFLAG} $< -o $@  
+	$(CC) $(CFLAGS) $< -o $@
