@@ -1,4 +1,4 @@
-.PHONY: all
+.PHONY: all say_all
 all: say_all
 
 say_all :
