@@ -1,2 +1,4 @@
-all :
+all: say_all
+
+say_all :
     gcc main.c school.c -o school
