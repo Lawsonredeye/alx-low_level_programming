@@ -1,4 +1,5 @@
 .PHONY: all
 
-all:
-    gcc *.c *.c -o school
+all: compile
+compile:
+    gcc *.c *c -o school
