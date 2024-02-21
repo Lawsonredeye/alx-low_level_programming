@@ -2,6 +2,6 @@ all: prog
 CC := gcc
 SRC := main.c school.c
 
-prog:
+prog: $(SRC)
 	$(CC) $(SRC) -o school
 
