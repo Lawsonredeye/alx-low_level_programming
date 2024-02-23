@@ -1,0 +1,34 @@
+.PHONY = all clean oclean fclean re
+
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
+SRC = main.c school.c
+OBJ = ${SRC:.c=.o}
+NAME = school
+RM = rm
+
+# force recompile
+re: fclean all
+
+# runs the entire compilation rule for all target
+all: $(NAME)
+
+# compiles the entire source code into object code
+${NAME}: ${OBJ}
+	${CC} $^ -o $@
+
+# runs with the all command to compile both object codes into source code
+%.o: %.c
+	$(CC) $(CFLAGS) $< -o $@
+
+# deletes all Emacs and Vim temporary files, the executable, and the object files
+fclean:
+	$(RM) -rf *.swp *~ $(NAME)
+
+# deletes object codes only
+oclean:
+	$(RM) -rf *.o
+
+# deletes all Emacs and Vim temporary files along with the executable
+clean:
+	$(RM) -rf *~ *.swp $(NAME)
