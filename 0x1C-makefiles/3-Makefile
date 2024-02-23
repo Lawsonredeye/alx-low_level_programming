@@ -22,8 +22,8 @@ ${NAME}: ${OBJ}
 
 # deletes all Emacs and Vim temporary files, the executable, and the object files
 fclean:
-# $(RM) -rf *.swp *~ $(NAME)
-	$(RM) -rf *.swp *~ $(OBJ)
+	$(RM) -rf *.swp *~ $(NAME)
+	$(RM) -rf $(OBJ) 
 
 # deletes object codes only
 oclean:
