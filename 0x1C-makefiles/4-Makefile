@@ -19,7 +19,7 @@ ${NAME}: ${OBJ}
 
 # runs with the all command to compile both object codes into source code
 %.o: %.c
-	$(CC) $(CFLAGS) $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 # deletes all Emacs and Vim temporary files, the executable, and the object files
 fclean:
