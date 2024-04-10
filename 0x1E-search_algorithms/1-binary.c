@@ -5,6 +5,8 @@ int binary_search(int *array, size_t size, int value)
 
     for (i = 0; L <= R; i++)
     {
+        printf("Searching in array: %d,", i);
+        printf("\n");
         M = (L + R) / 2;
         if (array[M] == value)
             return (M);
