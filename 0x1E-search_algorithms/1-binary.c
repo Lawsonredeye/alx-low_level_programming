@@ -9,19 +9,25 @@
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int M, i = 0, L = 0, R = size - 1;
+	int mid, i = 0, k = 0, Low = 0, High = size - 1;
 
-	for (i = 0; L <= R; i++)
+	for (i = 0; Low <= High; i++)
 	{
-		printf("Searching in array: %d,", i);
+		printf("Searching in array:");
+		for (k = Low; k < High + 1; k++)
+		{
+			printf(" %d", k);
+			if (k != High)
+				printf(",");
+		}
 		printf("\n");
-		M = (L + R) / 2;
-		if (array[M] == value)
-			return (M);
-		else if (array[M] > value)
-			R = M - 1;
-		else if (array[M] < value)
-			L = M + 1;
+		mid = (Low + High) / 2;
+		if (array[mid] == value)
+			return (mid);
+		else if (array[mid] > value)
+			High = mid - 1;
+		else if (array[mid] < value)
+			Low = mid + 1;
 	}
 	return (-1);
 }
