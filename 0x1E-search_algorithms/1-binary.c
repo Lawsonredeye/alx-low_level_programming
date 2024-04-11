@@ -22,10 +22,10 @@ int binary_search(int *array, size_t size, int value)
 		}
 		printf("\n");
 		mid = (Low + High) / 2;
-		if (array[mid] > value)
-			High = mid - 1;
-		else if (array[mid] < value)
+		if (array[mid] < value)
 			Low = mid + 1;
+		else if (array[mid] > value)
+			High = mid - 1;
 		else
 			return (mid);
 	}
