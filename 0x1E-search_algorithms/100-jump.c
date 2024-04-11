@@ -11,24 +11,25 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
-	int block = 0;
-	int i = 0, j;
-	int sizes = (int)size;
+    int block = 0;
+    int i = 0, j;
+    int sizes = (int)size;
 
-	while (block < sizes)
-	{
-		if (array[i] == value)
-			return (i);
-		i = block;
-		if (array[i] > value)
-		{
-			for (j = i; i > value; j--)
-			{
-				if (array[j] == value)
-					return (j);
-			}
-		}
-		block += sqrt(sizes);
-	}
-	return (-1);
+    while (block < sizes)
+    {
+        printf("Value checked array[%d] = [%d]\n", i, array[i]);
+        if (array[i] == value)
+            return (i);
+        i = block;
+        if (array[i] > value)
+        {
+            for (j = i; i > value; j--)
+            {
+                if (array[j] == value)
+                    return (j);
+            }
+        }
+        block += sqrt(sizes);
+    }
+    return (-1);
 }
